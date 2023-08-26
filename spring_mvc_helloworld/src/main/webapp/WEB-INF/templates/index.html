@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>index.html</h1>
+<!--href为servlet的超链接-->
+<a th:href="@{/hello}">测试SpringMVC</a> <!--这个路径会自动被servlet解析渲染加上路径-->
+<a href="/hello">测试绝对路径</a> <!--这个就不会自动被加上路径-->
+</body>
+</html>
